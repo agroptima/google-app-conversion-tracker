@@ -1,8 +1,10 @@
 # GoogleAppTracking Plugin
 
-Google App Install Conversion tracking plugin for iOS and Android. Phonegap integration for AdMob Conversion tracking.
+Google App Install Conversion tracking plugin for iOS and Android. Cordova integration for AdWords Conversion tracking.
 
-(June 2 2015: updated with current Google sdk and new cordova plugin.xml format. Credits to christoph-neumann mlegenhausen.)
+Current SDK Versions:
+- iOS: 3.4.0
+- Android: 2.2.4
 
 ## Preparation:
 
@@ -13,13 +15,13 @@ See https://developers.google.com/app-conversion-tracking/.
 
 Install with cordova cli:
 
-    cordova plugin add https://github.com/MyHealthTeams/google-app-conversion-tracker.git
+    cordova plugin add https://github.com/agroptima/google-app-conversion-tracker.git
 
 Google SDK libraries are included in the plugin. You'll need to make sure the AdSupport.framework is linked in xcode for the iOS app.
 
 ## Usage
 
-The plugin creates a `GappTracker` object, with just one method `track()`:
+The plugin creates a `GappTrack` object, with just one method `track()`:
 
     GappTrack.track(conversion_id, label, value, repeatable);
 
